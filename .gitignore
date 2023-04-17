@@ -1,0 +1,5 @@
+Locked/*
+dist/*
+build/*
+testing.py
+main.spec
