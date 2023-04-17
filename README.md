@@ -1,4 +1,4 @@
-[![Downloads](https://img.shields.io/github/downloads/hammadbawara/lock-text>/total.svg)](https://github.com/<username>/<repo-name>/releases)
+[![Downloads](https://img.shields.io/github/downloads/hammadbawara/lock-text/total.svg)](https://github.com/hammadbawara/lock-text/releases)
 [![Views](https://img.shields.io/badge/views-1234-brightgreen.svg)](https://github.com/hammadbawara/lock-text)
 
 # Lock Text
