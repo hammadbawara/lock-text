@@ -1,6 +1,3 @@
-[![Downloads](https://img.shields.io/github/downloads/hammadbawara/lock-text/total.svg)](https://github.com/hammadbawara/lock-text/releases)
-[![Views](https://img.shields.io/badge/views-1234-brightgreen.svg)](https://github.com/hammadbawara/lock-text)
-
 # Lock Text
 Lock Text is a Python program that allows you to encrypt and lock text for a certain number of days.
 
