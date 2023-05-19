@@ -1,3 +1,5 @@
+[Download For Windows](https://github.com/hammadbawara/lock-text/releases/download/1.0/Lock.Text.1.0.exe)
+
 # Lock Text
 Lock Text is a Python program that allows you to encrypt and lock text for a certain number of days.
 
