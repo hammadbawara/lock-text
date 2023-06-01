@@ -2,9 +2,23 @@ import time
 import requests
 from cryptography.fernet import Fernet
 import os
+import random
 
 KEY = b'V9EetliiTqq6huT6kr5W4zA-7ssmHhxPLWHbVyH4JQM='
 FOLDER_NAME = "Locked"
+
+
+def genRandomNums(length) :
+    rand = ""
+    for i in range(length):
+        rand+=str(random.randint(0, 9))
+    return rand
+
+def genRandomText(length):
+    rand = ""
+    for i in range(length):
+        rand += chr(random.randint(65, 126))
+    return rand
 
 if not os.path.isdir(FOLDER_NAME):
     os.mkdir(FOLDER_NAME)
@@ -20,6 +34,14 @@ def decrypt(text):
 def lock_text():
     title = input("Enter a title for the text: ")
     text = input("Enter the text you want to lock: ")
+    
+    if (text == "random" or "random-int") :
+        text = genRandomNums(16)
+        print(text)
+    elif (text == "random-str"):
+        text = genRandomText(16)
+        print(text)
+
     days = -1
     while days < 0:
         try:
@@ -84,8 +106,6 @@ def see_text():
                 with open(f'{FOLDER_NAME}/{filename.split(".")[0]}.txt', "w") as file:
                     file.write(text)
                 f.close()
-
-
                 os.remove(f'{FOLDER_NAME}/{filename}')
             else:
                 print("This text is not yet unlocked.")
